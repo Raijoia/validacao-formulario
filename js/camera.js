@@ -10,7 +10,7 @@ const btnEnviarFoto = document.querySelector("[data-enviar]")
 
 let imagemURL = ""
 
-btnIniciarCamera.addEventListener("clock", async function () {
+btnIniciarCamera.addEventListener("click", async function () {
   // solicitando para o navegador o uso apenas da camera
   // colocado async function e await, pois precisamos esperar o usuário liberar a solicitação da camera
   const iniciarVideo = await navigator.mediaDevices.getUserMedia({video: true, audio: false})
